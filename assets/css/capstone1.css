@@ -11,17 +11,149 @@ html {
 	scroll-behavior: smooth;
 }
 
-.container-fluid {
-	width: 100%;
-	padding: 10px;
-}
-
+/* start navbar */
 #company-logo {
 	width: 180px;
 }
 
-.nav-item:hover {
+.nav-item .nav-link {
+	margin: 0px 10px;
+	color: #f2f2f2;
+}
+
+.nav-item .nav-link:hover {
 	transition: .2s;
-	background-color: gray;
+	background-color: #f2f2f2;
+	color: #333;
 	border-radius: 5px;
 }
+
+.navbar {
+	/*position: fixed;*/
+	height: 70px;
+	background-color: #333;
+	background-color: rgba(0,0,0,.5);
+}
+/* end navbar */
+
+/* start carousel */
+#home .carousel,
+#home .carousel img {
+	height: 100vh;
+}
+.carousel-vp {
+	position: absolute;
+	bottom: 20px;
+}
+.carousel-vp > h1 {
+	color: #333;
+	font-size: 50px;
+	font-weight: bold;
+}
+.carousel-vp > p {
+	font-size: 25px;
+	color: #424949;
+}
+.carousel-vp a {
+	padding: 10px 20px;
+	border: 1px solid #333;
+	font-size: 20px;
+	color: #333;
+	font-weight: bold;
+}
+.carousel-vp > a:hover {
+	background-color: #333;
+	color: #f2f2f2;
+}
+
+
+.carousel-pe {
+	position: absolute;
+	top: 200px;
+	left: -400px;
+}
+.carousel-pe > h1 {
+	color: #f2f2f2;
+	font-size: 45px;
+}
+.carousel-pe > p {
+	font-size: 20px;
+	color: #f1f1f1;
+}
+.carousel-pe a {
+	padding: 10px 20px;
+	border: 1px solid #f2f2f2;
+	font-size: 20px;
+	color: #f2f2f2;
+	font-weight: bold;
+}
+.carousel-pe > a:hover {
+	background-color: #f2f2f2;
+	color: #333;
+}
+
+
+.carousel-tc {
+	position: absolute;
+	bottom: 200px;
+	right: -450px;
+}
+.carousel-tc > p {
+	font-size: 20px;
+	color: #f1f1f1;
+}
+.carousel-tc a {
+	padding: 10px 20px;
+	border: 1px solid #f2f2f2;
+	font-size: 20px;
+	color: #f2f2f2;
+	font-weight: bold;
+}
+.carousel-tc > a:hover {
+	background-color: #f2f2f2;
+	color: #333;
+}
+/* end carousel */
+
+/* start image connect */
+.img-connect {
+	background-image: url(../images/connect.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+.img-connect > #light {
+	text-align: center;
+	font-size: 30px;
+	color: #333;
+}
+.img-connect > #dark {
+	text-align: center;
+	font-size: 30px;
+	color: #f2f2f2;
+}
+/* end image connect */
+
+
+/* start about */
+
+/* end about */
+
+
+/* start services */
+.services-circles {
+	background-color: #333;
+	height: 30vh
+}
+.services-circles > img {
+	height: 20vh;
+	margin: 0 30px;
+}
+.services-circles > img:hover {
+	transform: scale(1.5);
+}
+
+
+/* end services */
