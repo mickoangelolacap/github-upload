@@ -11,6 +11,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+hr {
+	background-color: #C0392B;
+	height: 3px;
+}
+
 /* start navbar */
 #company-logo {
 	width: 180px;
@@ -30,7 +35,7 @@ html {
 
 .navbar {
 	/*position: fixed;*/
-	height: 70px;
+	height: 80px;
 	background-color: #333;
 	background-color: rgba(0,0,0,.5);
 }
@@ -157,3 +162,56 @@ html {
 
 
 /* end services */
+
+
+/* start products */
+
+/* end products */
+
+
+/* start contact */
+/* end contact */
+
+
+/* start footer */
+.footer img {
+	height: 50px
+}
+
+#footer-logo {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/* end footer */
+
+
+/* START CREDENTIALS */
+
+/* END CREDENTIALS */
+
+
+
+/* START CONTACT HTML */
+#contact-header {
+	position: relative;
+	background-image: url(../images/landing-contact.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 80vh;
+	border-radius: 0;
+}
+
+#landing-contact {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	width: 100vw;
+	color: #f2f2f2;
+	font-size: 50px;
+}
+/* END CONTACT HTML */
