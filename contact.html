@@ -14,6 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
 
 	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- animate css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -27,11 +28,13 @@
 
 <body>
 
-	<header id="contact-header" class="jumbotron mb-0">
-		<h1 id="landing-contact" class="d-none d-md-block"> WE ARE EXCITED TO WORK WITH YOU </h1>
-	</header>
+	<div class="container-fluid px-0">
+		
+		<header id="contact-header" class="jumbotron mb-0">
+			<h1 id="landing-contact" class="d-none d-md-block"> WE ARE EXCITED TO WORK WITH YOU </h1>
+		</header>
 
-	<!-- start nav -->
+		<!-- start nav -->
 		<nav class="navbar navbar-expand-md sticky-top">
 			<a href="#" class="navbar-brand">	
 				<img id="company-logo" src="assets/images/logo.png">
@@ -63,50 +66,64 @@
 		</nav>
 		<!-- end nav -->
 
-		<!-- start contact -->
-		<section id="contact">
-			<h1 class="text-center"> QUICK CONTACT </h1>
-			<hr>
-			<div class="row p-5">
-				<div class="col-md-12">
-					<div class="row">
-						<div id="qcontact-gmail" class="col-md-2 offset-md-3 text-center qcontact">
-							<a href="contact.html">
-								<p>For business inquiries</p>
-								<p>vantagepointconsultancy@gmail.com</p>
-							</a>
-						</div>
-						<div id="qcontact-phone" class="col-md-2 text-center qcontact">
-							<a href="#">
-								<p>Call us on</p>
-								<p>+63 956 872 0280</p>
-							</a>
-						</div>
-						<div id="qcontact-fb" class="col-md-2 text-center qcontact">
-							<a href="https://www.facebook.com/VPTCI/">
-								<p>Let's chat</p>
-								<p>@VPTCI</p>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end contact -->
+		<div class="container-fluid">
 
-		<!-- start footer -->
-		<footer>
-			<div class="row">
-				<div class="col-md-4 offset-md-4 footer">
-					<img src="assets/images/logo.png" id="footer-logo" class="image-fluid">
-					<hr class="mt-5">
-					<p class="text-center">
-						All rights reserved &copy; 2020
-					</p>	
+			<div class="row p-5">
+				<div class="col-md-6">
+					<h1 class="px-5 pt-5"> VantagePoint will chuchu ekek </h1>
+					<p class="px-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+					<h1 class="px-5"> Google Map Us! </h1>
+				</div>	
+				<div class="col-md-4 contact-form p-3">
+					<form>
+						<div class="form-group">
+							<label for="username">Name</label>
+							<input type="text" id="username" class="form-control" placeholder="Your Name">
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" class="form-control" placeholder="Your Email Address">
+						</div>
+
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<input type="text" id="phone" class="form-control" placeholder="Your Phone Number">
+						</div>
+
+						<div class="form-group">
+							<label for="inquiry">Inquiry</label>
+							<textarea id="textarea" class="form-control" placeholder="Your Inquiry"></textarea>
+						</div>
+						<!-- end form group -->
+
+						<button class="btn btn-block contact-submit">SUBMIT</button>
+					</form>
 				</div>
+				<!-- end form -->
 			</div>
-		</footer>
-		<!-- end footer -->
+			<!-- end row -->
+			<div class="row pt-0">
+				<div class="col-md-6 offset-md-1">
+					<iframe class="embed-responsive-item gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.731259356584!2d121.03125941399705!3d14.55735468983004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9b8d33b2c6d%3A0xb0c2f766338a92bd!2sZuitt%20Makati!5e0!3m2!1sen!2sph!4v1583289762462!5m2!1sen!2sph" frameborder="0" allowfullscreen=""></iframe>
+				</div>
+				<!-- end map -->	
+			</div>
+			<!-- end row -->
+
+
+		</div>
+		<!-- end container -->
+
+		
+		
+	</div>
+	<!-- end container -->
+
+
+
+
 
 	<!-- bootstrap dependencies -->
 	<script src="assets/js/jquery-3.4.1.min.js"></script>

@@ -2,10 +2,14 @@ Industrial
 Residential
 
 attach darkness
-unwanted scroll
+a link color
+footer text
 
 active
+scroll spy
+pop up - modal
 effects when seen
+animation on load
 
 #72706c
 #333

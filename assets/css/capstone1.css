@@ -61,7 +61,7 @@ hr {
 }
 .carousel-vp a {
 	padding: 10px 20px;
-	border: 1px solid #333;
+	border: 2px solid #C0392B;
 	font-size: 20px;
 	color: #333;
 	font-weight: bold;
@@ -87,7 +87,7 @@ hr {
 }
 .carousel-pe a {
 	padding: 10px 20px;
-	border: 1px solid #f2f2f2;
+	border: 2px solid #C0392B;
 	font-size: 20px;
 	color: #f2f2f2;
 	font-weight: bold;
@@ -109,7 +109,7 @@ hr {
 }
 .carousel-tc a {
 	padding: 10px 20px;
-	border: 1px solid #f2f2f2;
+	border: 2px solid #C0392B;
 	font-size: 20px;
 	color: #f2f2f2;
 	font-weight: bold;
@@ -143,14 +143,25 @@ hr {
 
 
 /* start about */
-
+.p-about {
+	height: 50vh;
+	border: 2px solid #333;
+	border-radius: 10px;
+	box-shadow: 3px 3px;
+}
+.p-about:hover {
+	border-color: #C0392B;
+	background-color: #333;
+	background-color: rgba(0,0,0,.5);
+	transition: .2s;
+}
 /* end about */
 
 
 /* start services */
 .services-circles {
 	background-color: #333;
-	height: 30vh
+	height: 20vh
 }
 .services-circles > img {
 	height: 20vh;
@@ -159,17 +170,71 @@ hr {
 .services-circles > img:hover {
 	transform: scale(1.5);
 }
-
-
+.p-services {
+	height: 40vh;
+	border: 2px solid #333;
+	border-radius: 10px;
+	box-shadow: 3px 3px;
+}
+.p-services:hover {
+	border-color: #C0392B;
+	background-color: #333;
+	background-color: rgba(0,0,0,.5);
+	transition: .2s;
+}
 /* end services */
 
 
 /* start products */
-
+.p-products {
+	border: 2px solid #333;
+	border-radius: 10px;
+	box-shadow: 3px 3px;
+}
+.p-products:hover {
+	border-color: #C0392B;
+	background-color: #333;
+	background-color: rgba(0,0,0,.5);
+	transition: .2s;
+}
+.product-image {
+	width: 100%;
+	height: 50vh;
+	box-shadow: 2px 2px;
+}
+.product-image:hover {
+	/*background-color: #C0392B;*/
+	border: 2px solid #C0392B;
+	filter: saturate(9);
+}
 /* end products */
 
 
 /* start contact */
+.p-link {
+	color: rgb(0,0,0,.5);
+}
+.link {
+	color: #333;
+}
+.fas,
+.far,
+.fab {
+	padding: 10px;
+	border-radius: 20%;
+	background-color: #333;
+	color: #f2f2f2;
+}
+
+.fas:hover {
+	background-color: #C0392B;
+}
+.far:hover {
+	background-color: #C0392B;
+}
+.fab:hover {
+	background-color: #C0392B;
+}
 /* end contact */
 
 
@@ -200,7 +265,7 @@ hr {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	height: 80vh;
+	height: 90vh;
 	border-radius: 0;
 }
 
@@ -210,8 +275,29 @@ hr {
 	left: 50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
-	width: 100vw;
-	color: #f2f2f2;
+	width: 100%;
+	color: #111;
 	font-size: 50px;
+}
+.contact-form {
+	border: 2px solid #C0392B;
+	box-shadow: 2px 2px;
+	border-radius: 10px;
+}
+.gmap {
+	border: 2px solid #C0392B;
+	box-shadow: 2px 2px;
+	border-radius: 2px;
+	width: 65%;
+	height: 50vh;
+}
+.contact-submit {
+	border: 2px solid #333;
+}
+.contact-submit:hover {
+	border: 2px solid #C0392B;
+	background-color: #C0392B;
+	color: #f2f2f2;
+	transition: .2s;
 }
 /* END CONTACT HTML */
