@@ -30,36 +30,39 @@
 	<div class="container-fluid">
 
 		<!-- start nav -->
-		<nav class="navbar navbar-expand-md fixed-top">
-			<a href="#home" class="navbar-brand">	
-				<img id="company-logo" src="assets/images/logo.png">
-			</a>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-md fixed-top">
+				<a href="#home" class="navbar-brand">	
+					<img id="company-logo" src="assets/images/logo.png">
+				</a>
 
-			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-nav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-nav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div id="navbar-nav" class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="#home" class="nav-link active">Home</a>
-					</li>
-					<li class="nav-item">
-						<a href="#about" class="nav-link">About</a>
-					</li>
-					<li class="nav-item">
-						<a href="#services" class="nav-link">Services</a>
-					</li>
-					<li class="nav-item">
-						<a href="#products" class="nav-link">Products</a>
-					</li>
-					<li class="nav-item">
-						<a href="#contact" class="nav-link">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!-- end nav -->
+				<div id="navbar-nav" class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#home" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#services" class="nav-link">Services</a>
+						</li>
+						<li class="nav-item">
+							<a href="#products" class="nav-link">Products</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- end nav -->
+		</div>
+		<!-- end container nav -->
 
 		<!-- start home -->
 		<div class="row">
@@ -72,27 +75,27 @@
 							<li data-target="#image-slide" data-slide-to="2"></li>
 						</ol>
 						<div class="carousel-inner">
-							<div class="carousel-item active" data-interval="5000">
+							<div class="carousel-item active" data-interval="3000">
 								<img src="assets/images/img-slide1.jpeg" class="d-block w-100">
-								<div class="carousel-caption d-none d-md-block carousel-vp">
+								<div class="carousel-caption d-md-block carousel-vp">
 									<h1 class="animated bounceInLeft my-0"> VANTAGEPOINT </h1>
 									<p class="animated fadeInLeft"> Change your Lighting Perspective </p>
 									<a class="btn animated fadeIn my-2" href="contact.html"> START A PROJECT </a>
 								</div>
 							</div>
-							<div class="carousel-item" data-interval="5000">
+							<div class="carousel-item" data-interval="3000">
 								<img src="assets/images/img-slide2.jpeg" class="d-block w-100">
-								<div class="carousel-caption d-none d-md-block carousel-pe">
+								<div class="carousel-caption d-md-block carousel-pe">
 									<h1 class="animated bounceInLeft"> PROFESSIONAL EXPERIENCE </h1>
-									<p class="animated fadeInLeft"> Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
+									<p class="animated fadeInLeft"> Excellence through Hardwork and Experience </p>
 									<a class="btn animated fadeIn my-3" href="#services"> SEE OUR WORK </a>
 								</div>
 							</div>
-							<div class="carousel-item" data-interval="5000">
+							<div class="carousel-item" data-interval="3000">
 								<img src="assets/images/img-slide3.jpeg" class="d-block w-100">
-								<div class="carousel-caption d-none d-md-block carousel-tc">
+								<div class="carousel-caption d-md-block carousel-tc">
 									<h1 class="animated bounceInLeft"> TRADING AND CONSULTANCY </h1>
-									<p class="animated fadeInLeft"> Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
+									<p class="animated fadeInLeft"> Reliable, Innovative and Timely Services </p>
 									<a class="btn animated fadeIn my-3" href="credentials.html"> GET TO KNOW US </a>
 								</div>
 							</div>
@@ -125,20 +128,19 @@
 			<h1 class="text-center pt-4"> ABOUT US </h1>
 			<hr>
 			<div class="row">
-				<div class="col-md-6 text-center">
+				<div class="col-lg-6 text-center">
 					<div id="mission" class="p-5">
 						<h2 class="about-tags p-3"> MISSION </h2>
 						<p class="text-justify p-5 p-about"> "Our mission is to provide quality services to our customers in global logistics safely and efficiently by utilizing quality personnel and reliable resources. Offer cost effective, environmentally friendly and problem solving consultations and solutions that assist our clients in achieving their objectives and continually meet and exceed their expectations and provide unquestionable value." </p>
 					</div>
 				</div>
-				<div class="col-md-6 text-center">
+				<div class="col-lg-6 text-center">
 					<div id="vision" class="p-5">
 						<h2 class="about-tags p-3"> VISION </h2>
 						<p class="text-justify p-5 p-about"> "We strive to be the most preferred and reliable trading and consultancy company, providing the most creative, innovative and timely services on a consistent basis in terms of brokerage and consignment, in an effort to drive meaningful value to our agents." </p>
 					</div>
 				</div>
 			</div>
-
 		</section>
 		<!-- end about -->
 
@@ -146,48 +148,54 @@
 		<section id="services">
 			<h1 class="text-center pt-4"> CAPABILITIES AND SERVICES </h1>
 			<hr>
-			<figure class="services-circles text-center">
-				<img src="assets/images/icon1.png" class="circle brokerage">
-				<img src="assets/images/icon2.png" class="circle trading">
-				<img src="assets/images/icon3.png" class="circle trucking">
-			</figure>
+			<div class="row text-center pt-3">
+				<div class="col-4 col-lg-2 offset-lg-3 services-circles">
+					<img src="assets/images/icon4.png" class="circle brokerage">
+				</div>
+				<div class="col-4 col-lg-2 services-circles">
+					<img src="assets/images/icon5.png" class="circle trading">
+				</div>
+				<div class="col-4 col-lg-2 services-circles">
+					<img src="assets/images/icon6.png" class="circle trucking">
+				</div>
+			</div>
 
-			<div class="row">
-				<div class="col-md-4 text-center">
-					<div class="capabilitie-services consignment p-5">
+			<div class="row pt-5">
+				<div class="col-lg-4 text-center">
+					<div class="capabilitie-services-services consignment px-5">
 						<h2 class="p-3"> Consignment </h2>
-						<p class="p-5 text-justify p-services"> We can receive shipments on your behalf! 
+						<p class="p-4 text-justify p-services"> We can receive shipments on your behalf! 
 						We'll be responsible and take care of it. </p>
 					</div>		
 				</div>
-				<div class="col-md-4 text-center">
-					<div class="capabilitie-services broker p-5">
-						<h2 class="p-3"> Licensed Custom Broker </h2>
-						<p class="p-5 text-justify p-services"> We can be your Middleman! 
+				<div class="col-lg-4 text-center">
+					<div class="capabilities-services broker px-5">
+						<h2 class="p-3"> Custom Broker </h2>
+						<p class="p-4 text-justify p-services"> We can be your Middleman! 
 						We facilitate the shipment and delivery of goods across geographical borders for individuals / organizations. </p>
 					</div>
 				</div>
-				<div class="col-md-4 text-center p-5">
-					<div class="capabilitie-services trucking">
+				<div class="col-lg-4 text-center">
+					<div class="capabilities-services trucking px-5">
 						<h2 class="p-3"> Trucking </h2>
-						<p class="p-5 text-justify p-services"> We move!
+						<p class="p-4 text-justify p-services"> We move!
 						We transport large quantities of raw materials, construction materials, industrial materials and equipment, etc., typically by land. </p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-6 text-center">
-					<div class="capabilitie-services consultation px-5">
+				<div class="col-lg-6 text-center">
+					<div class="capabilities-services consultation px-5">
 						<h2 class="p-3"> Consultation </h2>
-						<p class="p-5 text-justify p-services"> We can talk to you!
+						<p class="p-4 text-justify p-services"> We can talk to you!
 						We can support you and work together or give professional and expert advice depending on your field of interests. (Legal Consultations, Governance, Risk and Compliance, etc. </p>
 					</div>	
 				</div>
-				<div class="col-md-6 text-center">
-					<div class="capabilitie-services trading px-5">
+				<div class="col-lg-6 text-center">
+					<div class="capabilities-services trading px-5">
 						<h2 class="p-3"> Trading </h2>
-						<p class="p-5 text-justify p-services"> We Trade!
+						<p class="p-4 text-justify p-services"> We Trade!
 						We supply Industrial Materials and Equipment depending on your requirements. (Construction Materials, Electrical Pole, LED Lights, etc.) </p>
 					</div>
 				</div>
@@ -203,18 +211,18 @@
 			<h2 class="text-center p-5"> INDUSTRIAL | RESIDENTIAL </h2>
 
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6">
-						<img class="img-fluid" src="assets/images/industrial1.jpeg">
+				<div class="row text-center industrial">
+					<div class="col-lg-6">
+						<img class="img-fluid industrial-img" src="assets/images/industrial1.jpg">
 					</div>
-					<div class="col-md-6">
-						<img class="img-fluid" src="assets/images/industrial2.jpeg">
+					<div class="col-lg-6">
+						<img class="img-fluid industrial-img resi" src="assets/images/industrial2.jpeg">
 					</div>
 				</div>
 			</div>
 
 			<hr class="mt-5">
-			<h2 class="text-center p-5"> LED LIGHTS </h2>
+			<h1 class="text-center p-5"> LED LIGHTS </h1>
 			<div class="row text-center">
 				<div class="col-lg-6 text-center">
 					<h3 class="p-3"> Eco-Friendly </h3>
@@ -226,7 +234,7 @@
 				</div>
 			</div>
 
-			<div class="container-fluid">
+			<div class="container-fluid pb-5">
 				<div class="row">
 					<div class="col-lg-3 text-center">
 						<h2 class="pt-5"> STREETLIGHTS </h2>
@@ -251,51 +259,54 @@
 		<!-- end products -->
 
 		<!-- start contact -->
-		<section id="contact">
-			<h1 class="text-center pt-5"> QUICK CONTACT </h1>
-			<hr>
-			<div class="row pb-3">
-				<div class="col-md-12">
-					<div class="row">
-						<div id="qcontact-phone" class="col-md-4 text-right qcontact">
-							<a href="#" class="link">
-								<i class="fas fa-mobile-alt"></i>
-								<h4 class="mb-0 call">Call us on</h4>
-								<p class="p-link">+63 956 872 0280</p>
-							</a>
-						</div>
-						<div id="qcontact-gmail" class="col-md-4 text-center qcontact">
-							<a href="contact.html" class="link">
-								<i class="far fa-paper-plane"></i>
-								<h4 class="mb-0 mail">For business inquiries</h4>
-								<p class="p-link">vantagepointconsultancy@gmail.com</p>
-							</a>
-						</div>
-						<div id="qcontact-fb" class="col-md-4 text-left qcontact">
-							<a href="https://www.facebook.com/VPTCI/" target="_blank" class="link">
-								<i class="fab fa-facebook-f"></i>
-								<h4 class="mb-0 chat">Let's chat</h4>
-								<p class="p-link">@VPTCI</p>
-							</a>
+		<div class="container-fluid">
+			<section id="contact">
+				<h1 class="text-center pt-5"> QUICK CONTACT </h1>
+				<hr>
+				<div class="row pb-3">
+					<div class="col-md-12">
+						<div class="row">
+							<div id="qcontact-phone" class="col-md-4 text-right qcontact">
+								<a href="#" class="link">
+									<i class="fas fa-mobile-alt"></i>
+									<h4 class="mb-0 call">Call us on</h4>
+									<p class="p-link">+63 956 872 0280</p>
+								</a>
+							</div>
+							<div id="qcontact-gmail" class="col-md-4 text-center qcontact">
+								<a href="contact.html" class="link">
+									<i class="far fa-paper-plane"></i>
+									<h4 class="mb-0 mail">For business inquiries</h4>
+									<p class="p-link">vantagepointconsultancy@gmail.com</p>
+								</a>
+							</div>
+							<div id="qcontact-fb" class="col-md-4 text-left qcontact">
+								<a href="https://www.facebook.com/VPTCI/" target="_blank" class="link">
+									<i class="fab fa-facebook-f"></i>
+									<h4 class="mb-0 chat">Let's chat</h4>
+									<p class="p-link">@VPTCI</p>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- end contact -->
+			</section>
+			<!-- end contact -->
 
-		<!-- start footer -->
-		<footer>
-			<div class="row">
-				<div class="col-md-4 offset-md-4 footer">
-					<img src="assets/images/logo.png" id="footer-logo" class="image-fluid pt-3">
-					<p class="text-center mt-4">
-						All rights reserved &copy; 2020
-					</p>	
+			<!-- start footer -->
+			<footer>
+				<div class="row">
+					<div class="col-md-4 offset-md-4 footer">
+						<img src="assets/images/logo.png" id="footer-logo" class="image-fluid pt-3">
+						<p class="text-center mt-4">
+							All rights reserved &copy; 2020
+						</p>	
+					</div>
 				</div>
-			</div>
-		</footer>
-		<!-- end footer -->
+			</footer>
+			<!-- end footer -->
+		</div>
+		<!-- end container contact / footer -->
 
 
 

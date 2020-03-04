@@ -1,9 +1,9 @@
 Industrial
 Residential
 
-attach darkness
-a link color
-footer text
+mobile responsive
+footer text email and link color
+horizontal scroll on ipad main page / credentials - circles
 
 active
 scroll spy

@@ -18,7 +18,7 @@ hr {
 
 /* start navbar */
 #company-logo {
-	width: 180px;
+	width: 150px;
 }
 
 .nav-item .nav-link {
@@ -34,7 +34,6 @@ hr {
 }
 
 .navbar {
-	/*position: fixed;*/
 	height: 80px;
 	background-color: #333;
 	background-color: rgba(0,0,0,.5);
@@ -144,7 +143,7 @@ hr {
 
 /* start about */
 .p-about {
-	height: 50vh;
+	height: 35vh;
 	border: 2px solid #333;
 	border-radius: 10px;
 	box-shadow: 3px 3px;
@@ -160,8 +159,7 @@ hr {
 
 /* start services */
 .services-circles {
-	background-color: #333;
-	height: 20vh
+	height: 15vh
 }
 .services-circles > img {
 	height: 20vh;
@@ -169,9 +167,10 @@ hr {
 }
 .services-circles > img:hover {
 	transform: scale(1.5);
+	transition: .2s;
 }
 .p-services {
-	height: 40vh;
+	height: 20vh;
 	border: 2px solid #333;
 	border-radius: 10px;
 	box-shadow: 3px 3px;
@@ -186,6 +185,11 @@ hr {
 
 
 /* start products */
+.industrial-img {
+	height: 100vh;
+	box-shadow: 20px 20px;
+}
+
 .p-products {
 	border: 2px solid #333;
 	border-radius: 10px;
@@ -200,12 +204,12 @@ hr {
 .product-image {
 	width: 100%;
 	height: 50vh;
-	box-shadow: 2px 2px;
+	box-shadow: 10px 10px;
 }
 .product-image:hover {
 	/*background-color: #C0392B;*/
+	filter: grayscale(50);
 	border: 2px solid #C0392B;
-	filter: saturate(9);
 }
 /* end products */
 
@@ -252,6 +256,57 @@ hr {
 
 
 /* START CREDENTIALS */
+#credentials-header {
+	position: relative;
+	background-image: url(../images/landing-credentials.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 90vh;
+	border-radius: 0;
+}
+#landing-credentials {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	width: 100%;
+	color: #111;
+	font-size: 50px;
+}
+.credentials-circles {
+	height: 15vh
+}
+.credentials-circles > img {
+	height: 20vh;
+	margin: 0 30px;
+}
+.credentials-circles > img:hover {
+	transform: scale(1.5);
+	transition: .2s;
+}
+.alert {
+	font-weight: bold;
+	border: 1px solid #333;
+}
+.alert:hover {
+	background-color: #C0392B;
+	color: #f2f2f2;
+}
+.circle-sec:hover .alert-sec {
+	background-color: #C0392B;
+	color: #f2f2f2;
+}
+.card-img-top {
+	height: 60vh;
+	border: 2px solid #C0392B;
+	box-shadow: 10px 10px;
+}
+.card-img-top:hover {
+	filter: blur(9px);
+}
 
 /* END CREDENTIALS */
 
@@ -279,17 +334,25 @@ hr {
 	color: #111;
 	font-size: 50px;
 }
+.contact-email {
+	color: rgba(0,0,0,.5);
+}
+.contact-ll,
+.contact-mb {
+	color: rgba(0,0,0,.3);
+}
+
 .contact-form {
 	border: 2px solid #C0392B;
-	box-shadow: 2px 2px;
+	box-shadow: 5px 5px #333;
 	border-radius: 10px;
 }
 .gmap {
 	border: 2px solid #C0392B;
-	box-shadow: 2px 2px;
-	border-radius: 2px;
-	width: 65%;
-	height: 50vh;
+	box-shadow: 5px 5px #333;
+	border-radius: 10px;
+	width: 80%;
+	height: 60vh;
 }
 .contact-submit {
 	border: 2px solid #333;
@@ -300,4 +363,65 @@ hr {
 	color: #f2f2f2;
 	transition: .2s;
 }
+#lost {
+	text-align: center;
+	height: 50vh;
+}
 /* END CONTACT HTML */
+
+
+
+/* MEDIA QUERIES */
+
+
+/* IPAD */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.container {
+		width: 100%;
+	}
+	.carousel-pe {
+		position: absolute;
+		top: 68%;
+		left: 15%;
+		text-align: center;
+	}
+	.carousel-tc {
+		position: absolute;
+		bottom: 2%;
+		right: 15%;
+	}
+	.p-about {
+		height: 22vh;
+	}
+	.p-services {
+		height: 12vh;
+	}
+	.resi {
+		padding-top: 30px;
+	}
+	
+	#contact-header {
+		height: 93vh;
+	}
+	.contact-top {
+		text-align: center;
+	}
+	.contact-map {
+		text-align: center;
+	}
+	#lost {
+		height: 20vh;
+		text-align: center;
+	}
+	#credentials-header {
+		height: 93vh;
+	}
+	.card-img-top {
+		height: 50vh;
+	}
+}
+
+/* PIXEL */
+@media only screen and (max-width: 400px) {
+
+}
