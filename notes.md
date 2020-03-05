@@ -1,13 +1,6 @@
-Industrial
-Residential
+home layout pictures
+header image on contact / credentials
 
-navbar pixel
-shadow
-contact images
-copyright
-
-active
-scroll spy
 pop up - modal
 effects when seen
 animation on load

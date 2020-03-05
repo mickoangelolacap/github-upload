@@ -10,7 +10,6 @@
 html {
 	scroll-behavior: smooth;
 }
-
 hr {
 	background-color: #C0392B;
 	height: 3px;
@@ -120,7 +119,7 @@ hr {
 /* end carousel */
 
 /* start image connect */
-.img-connect {
+/*.img-connect {
 	background-image: url(../images/connect.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -137,7 +136,7 @@ hr {
 	text-align: center;
 	font-size: 30px;
 	color: #f2f2f2;
-}
+}*/
 /* end image connect */
 
 
@@ -146,7 +145,7 @@ hr {
 	height: 40vh;
 	border: 2px solid #333;
 	border-radius: 10px;
-	box-shadow: 3px 3px;
+	box-shadow: 0px 25px 42px rgba(0,0,0,0.5);
 }
 .p-about:hover {
 	border-color: #C0392B;
@@ -172,7 +171,7 @@ hr {
 	height: 26vh;
 	border: 2px solid #333;
 	border-radius: 10px;
-	box-shadow: 3px 3px;
+	box-shadow: 0px 25px 42px rgba(0,0,0,0.5);
 }
 .p-services:hover {
 	border-color: #C0392B;
@@ -186,13 +185,13 @@ hr {
 /* start products */
 .industrial-img {
 	height: 100vh;
-	box-shadow: 20px 20px;
+	box-shadow: 20px 35px 30px rgba(0,0,0,0.5);
 }
 
 .p-products {
 	border: 2px solid #333;
 	border-radius: 10px;
-	box-shadow: 3px 3px;
+	box-shadow: 0px 25px 42px rgba(0,0,0,0.5);
 }
 .p-products:hover {
 	border-color: #C0392B;
@@ -203,7 +202,7 @@ hr {
 .product-image {
 	width: 100%;
 	height: 50vh;
-	box-shadow: 10px 10px;
+	box-shadow: 20px 25px 30px rgba(0,0,0,0.5);
 }
 .product-image:hover {
 	/*background-color: #C0392B;*/
@@ -251,6 +250,9 @@ hr {
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+#footer-logo + p {
+	font-size: 2vh;
+}
 /* end footer */
 
 
@@ -262,7 +264,7 @@ hr {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	height: 90vh;
+	height: 100vh;
 	border-radius: 0;
 }
 #landing-credentials {
@@ -274,6 +276,7 @@ hr {
 	width: 100%;
 	color: #111;
 	font-size: 50px;
+	background-color: rgba(255,255,255,.2);
 }
 .credentials-circles {
 	height: 15vh
@@ -300,7 +303,7 @@ hr {
 .card-img-top {
 	height: 60vh;
 	border: 2px solid #C0392B;
-	box-shadow: 10px 10px;
+	box-shadow: 20px 25px 30px rgba(0,0,0,0.5);
 }
 .card-img-top:hover {
 	filter: blur(9px);
@@ -318,7 +321,7 @@ hr {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	height: 90vh;
+	height: 100vh;
 	border-radius: 0;
 }
 
@@ -331,6 +334,7 @@ hr {
 	width: 100%;
 	color: #111;
 	font-size: 50px;
+	background-color: rgba(255,255,255,0.2);
 }
 .contact-email {
 	color: rgba(0,0,0,.5);
@@ -342,12 +346,12 @@ hr {
 
 .contact-form {
 	border: 2px solid #C0392B;
-	box-shadow: 5px 5px #333;
+	box-shadow: 0px 25px 42px rgba(0,0,0,0.5);
 	border-radius: 10px;
 }
 .gmap {
 	border: 2px solid #C0392B;
-	box-shadow: 5px 5px #333;
+	box-shadow: 0px 25px 42px rgba(0,0,0,0.5);
 	border-radius: 10px;
 	width: 80%;
 	height: 60vh;
@@ -423,6 +427,9 @@ hr {
 	.card-img-top {
 		height: 40vh;
 	}
+	#footer-logo + p {
+	font-size: 5px;
+	}
 
 }
 
@@ -462,7 +469,7 @@ hr {
 	}
 	#home .carousel,
 	#home .carousel img {
-	height: 50vh;
+		height: 50vh;
 	}
 	.carousel-vp h1, p, a {
 		font-size: 5vh;
@@ -567,5 +574,8 @@ hr {
 	}
 	.card-img-top {
 		height: 50vh;
+	}
+	#footer-logo + p {
+	font-size: 5px;
 	}
 }
