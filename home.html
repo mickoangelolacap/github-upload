@@ -33,17 +33,20 @@
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-md fixed-top">
 				<a href="#home" class="navbar-brand">	
-					<img id="company-logo" src="assets/images/logo.png">
+					<img id="company-logo" class="d-md-block d-none" src="assets/images/logo.png">
 				</a>
 
 				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-nav">
 					<span class="navbar-toggler-icon"></span>
+					<span class="d-block d-md-none nav-icon-pixel">
+						<img id="icon-pixel" src="assets/images/icon.png">
+					</span>
 				</button>
 
 				<div id="navbar-nav" class="collapse navbar-collapse">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a href="#home" class="nav-link active">Home</a>
+							<a href="#home" class="nav-link">Home</a>
 						</li>
 						<li class="nav-item">
 							<a href="#about" class="nav-link">About</a>
@@ -60,7 +63,6 @@
 					</ul>
 				</div>
 			</nav>
-			<!-- end nav -->
 		</div>
 		<!-- end container nav -->
 
@@ -128,16 +130,16 @@
 			<h1 class="text-center pt-4"> ABOUT US </h1>
 			<hr>
 			<div class="row">
-				<div class="col-lg-6 text-center">
-					<div id="mission" class="p-5">
-						<h2 class="about-tags p-3"> MISSION </h2>
-						<p class="text-justify p-5 p-about"> "Our mission is to provide quality services to our customers in global logistics safely and efficiently by utilizing quality personnel and reliable resources. Offer cost effective, environmentally friendly and problem solving consultations and solutions that assist our clients in achieving their objectives and continually meet and exceed their expectations and provide unquestionable value." </p>
+				<div class="col-md-6 col-lg-6 text-center">
+					<div id="mission" class="p-lg-4">
+						<h2 class="about-tags p-md-3"> MISSION </h2>
+						<p class="text-justify p-lg-5 p-md-4 p-3 p-about"> "Our mission is to provide quality services to our customers in global logistics safely and efficiently by utilizing quality personnel and reliable resources. Offer cost effective, environmentally friendly and problem solving consultations and solutions that assist our clients in achieving their objectives and continually meet and exceed their expectations and provide unquestionable value." </p>
 					</div>
 				</div>
-				<div class="col-lg-6 text-center">
-					<div id="vision" class="p-5">
-						<h2 class="about-tags p-3"> VISION </h2>
-						<p class="text-justify p-5 p-about"> "We strive to be the most preferred and reliable trading and consultancy company, providing the most creative, innovative and timely services on a consistent basis in terms of brokerage and consignment, in an effort to drive meaningful value to our agents." </p>
+				<div class="col-md-6 col-lg-6 text-center">
+					<div id="vision" class="p-lg-4">
+						<h2 class="about-tags p-md-3"> VISION </h2>
+						<p class="text-justify p-lg-5 p-md-4 p-3 p-about"> "We strive to be the most preferred and reliable trading and consultancy company, providing the most creative, innovative and timely services on a consistent basis in terms of brokerage and consignment, in an effort to drive meaningful value to our agents." </p>
 					</div>
 				</div>
 			</div>
@@ -148,7 +150,7 @@
 		<section id="services">
 			<h1 class="text-center pt-4"> CAPABILITIES AND SERVICES </h1>
 			<hr>
-			<div class="row text-center pt-3">
+			<div class="row text-center pt-md-3">
 				<div class="col-4 col-lg-2 offset-lg-3 services-circles">
 					<img src="assets/images/icon4.png" class="circle brokerage">
 				</div>
@@ -161,41 +163,41 @@
 			</div>
 
 			<div class="row pt-5">
-				<div class="col-lg-4 text-center">
-					<div class="capabilitie-services-services consignment px-5">
+				<div class="col-6 col-lg-4 text-center">
+					<div class="capabilitie-services-services consignment px-lg-5">
 						<h2 class="p-3"> Consignment </h2>
-						<p class="p-4 text-justify p-services"> We can receive shipments on your behalf! 
+						<p class="p-3 p-md-4 text-justify p-services"> We can receive shipments on your behalf! 
 						We'll be responsible and take care of it. </p>
 					</div>		
 				</div>
-				<div class="col-lg-4 text-center">
-					<div class="capabilities-services broker px-5">
+				<div class="col-6 col-lg-4 text-center">
+					<div class="capabilities-services broker px-lg-5">
 						<h2 class="p-3"> Custom Broker </h2>
-						<p class="p-4 text-justify p-services"> We can be your Middleman! 
+						<p class="p-3 p-md-4 text-justify p-services"> We can be your Middleman! 
 						We facilitate the shipment and delivery of goods across geographical borders for individuals / organizations. </p>
 					</div>
 				</div>
-				<div class="col-lg-4 text-center">
-					<div class="capabilities-services trucking px-5">
+				<div class="col-6 offset-3 offset-md-3 offset-lg-0 col-lg-4 text-center">
+					<div class="capabilities-services trucking px-lg-5">
 						<h2 class="p-3"> Trucking </h2>
-						<p class="p-4 text-justify p-services"> We move!
+						<p class="p-3 p-md-4 text-justify p-services"> We move!
 						We transport large quantities of raw materials, construction materials, industrial materials and equipment, etc., typically by land. </p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-6 text-center">
-					<div class="capabilities-services consultation px-5">
+				<div class="col-6 col-lg-6 text-center">
+					<div class="capabilities-services consultation px-lg-5">
 						<h2 class="p-3"> Consultation </h2>
-						<p class="p-4 text-justify p-services"> We can talk to you!
+						<p class="p-3 p-md-4 text-justify p-services"> We can talk to you!
 						We can support you and work together or give professional and expert advice depending on your field of interests. (Legal Consultations, Governance, Risk and Compliance, etc. </p>
 					</div>	
 				</div>
-				<div class="col-lg-6 text-center">
-					<div class="capabilities-services trading px-5">
+				<div class="col-6 col-lg-6 text-center">
+					<div class="capabilities-services trading px-lg-5">
 						<h2 class="p-3"> Trading </h2>
-						<p class="p-4 text-justify p-services"> We Trade!
+						<p class="p-3 p-md-4 text-justify p-services"> We Trade!
 						We supply Industrial Materials and Equipment depending on your requirements. (Construction Materials, Electrical Pole, LED Lights, etc.) </p>
 					</div>
 				</div>
@@ -208,47 +210,47 @@
 		<section id="products">
 			<h1 class="text-center pt-4"> PRODUCTS </h1>
 			<hr>
-			<h2 class="text-center p-5"> INDUSTRIAL | RESIDENTIAL </h2>
+			<h2 class="text-center p-3 p-md-5"> INDUSTRIAL | RESIDENTIAL </h2>
 
 			<div class="container-fluid">
 				<div class="row text-center industrial">
-					<div class="col-lg-6">
+					<div class="col-6">
 						<img class="img-fluid industrial-img" src="assets/images/industrial1.jpg">
 					</div>
-					<div class="col-lg-6">
+					<div class="col-6">
 						<img class="img-fluid industrial-img resi" src="assets/images/industrial2.jpeg">
 					</div>
 				</div>
 			</div>
 
 			<hr class="mt-5">
-			<h1 class="text-center p-5"> LED LIGHTS </h1>
-			<div class="row text-center">
+			<h1 class="text-center p-lg-4"> LED LIGHTS </h1>
+			<div class="row text-center px-4 px-lg-5">
 				<div class="col-lg-6 text-center">
 					<h3 class="p-3"> Eco-Friendly </h3>
-					<p class="p-5 text-justify p-products"> LED product is healthy, free of stroboflash, ultraviolent rays, infrared radiation and mercury element. It will not produce harmful substances during the use, so it is recognized as a new green lighting in the twenty first century. </p>
+					<p class="p-3 p-md-5 text-justify p-products"> LED product is healthy, free of stroboflash, ultraviolent rays, infrared radiation and mercury element. It will not produce harmful substances during the use, so it is recognized as a new green lighting in the twenty first century. </p>
 				</div>
 				<div class="col-lg-6">
 					<h3 class="p-3"> Energy-Efficient </h3>
-					<p class="p-5 text-justify p-products"> LED product has the advantages of high brightness, low power consumption, low hear, etc. 50-80% of energy can be saved compared to the traditional light sources under the same illumination intensity. </p>
+					<p class="p-3 p-md-5 text-justify p-products"> LED product has the advantages of high brightness, low power consumption, low hear, etc. 50-80% of energy can be saved compared to the traditional light sources under the same illumination intensity. </p>
 				</div>
 			</div>
 
 			<div class="container-fluid pb-5">
 				<div class="row">
-					<div class="col-lg-3 text-center">
+					<div class="col-6 col-lg-3 text-center">
 						<h2 class="pt-5"> STREETLIGHTS </h2>
 						<img class="img-fluid product-image" src="assets/images/streetlight.jpg">
 					</div>
-					<div class="col-lg-3 text-center">
+					<div class="col-6 col-lg-3 text-center">
 						<h2 class="pt-5"> DOWNLIGHTS </h2>
 						<img class="img-fluid product-image" src="assets/images/downlight.png">
 					</div>
-					<div class="col-lg-3 text-center">
+					<div class="col-6 col-lg-3 text-center">
 						<h2 class="pt-5"> FLOODLIGHTS </h2>
 						<img class="img-fluid product-image" src="assets/images/floodlight.jpg">
 					</div>
-					<div class="col-lg-3 text-center">
+					<div class="col-6 col-lg-3 text-center">
 						<h2 class="pt-5"> TUBELIGHTS </h2>
 						<img class="img-fluid product-image" src="assets/images/tubelight.jpg">
 					</div>
@@ -264,27 +266,27 @@
 				<h1 class="text-center pt-5"> QUICK CONTACT </h1>
 				<hr>
 				<div class="row pb-3">
-					<div class="col-md-12">
+					<div class="col-12">
 						<div class="row">
-							<div id="qcontact-phone" class="col-md-4 text-right qcontact">
+							<div id="qcontact-phone" class="col-4 text-right qcontact">
 								<a href="#" class="link">
 									<i class="fas fa-mobile-alt"></i>
-									<h4 class="mb-0 call">Call us on</h4>
-									<p class="p-link">+63 956 872 0280</p>
+									<h4 class="d-none d-lg-block mb-0 call">Call us on</h4>
+									<p class="d-none d-lg-block p-link">+63 956 872 0280</p>
 								</a>
 							</div>
-							<div id="qcontact-gmail" class="col-md-4 text-center qcontact">
+							<div id="qcontact-gmail" class="col-4 text-center qcontact">
 								<a href="contact.html" class="link">
 									<i class="far fa-paper-plane"></i>
-									<h4 class="mb-0 mail">For business inquiries</h4>
-									<p class="p-link">vantagepointconsultancy@gmail.com</p>
+									<h4 class="d-none d-lg-block mb-0 mail">For business inquiries</h4>
+									<p class="d-none d-lg-block p-link d-none">vantagepointconsultancy@gmail.com</p>
 								</a>
 							</div>
-							<div id="qcontact-fb" class="col-md-4 text-left qcontact">
+							<div id="qcontact-fb" class="col-4 text-left qcontact">
 								<a href="https://www.facebook.com/VPTCI/" target="_blank" class="link">
 									<i class="fab fa-facebook-f"></i>
-									<h4 class="mb-0 chat">Let's chat</h4>
-									<p class="p-link">@VPTCI</p>
+									<h4 class="d-none d-lg-block mb-0 chat">Let's chat</h4>
+									<p class="d-none d-lg-block p-link">@VPTCI</p>
 								</a>
 							</div>
 						</div>

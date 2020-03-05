@@ -1,9 +1,10 @@
 Industrial
 Residential
 
-mobile responsive
-footer text email and link color
-horizontal scroll on ipad main page / credentials - circles
+navbar pixel
+shadow
+contact images
+copyright
 
 active
 scroll spy

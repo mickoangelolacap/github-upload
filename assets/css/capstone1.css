@@ -143,7 +143,7 @@ hr {
 
 /* start about */
 .p-about {
-	height: 35vh;
+	height: 40vh;
 	border: 2px solid #333;
 	border-radius: 10px;
 	box-shadow: 3px 3px;
@@ -163,14 +163,13 @@ hr {
 }
 .services-circles > img {
 	height: 20vh;
-	margin: 0 30px;
 }
 .services-circles > img:hover {
 	transform: scale(1.5);
 	transition: .2s;
 }
 .p-services {
-	height: 20vh;
+	height: 26vh;
 	border: 2px solid #333;
 	border-radius: 10px;
 	box-shadow: 3px 3px;
@@ -281,7 +280,6 @@ hr {
 }
 .credentials-circles > img {
 	height: 20vh;
-	margin: 0 30px;
 }
 .credentials-circles > img:hover {
 	transform: scale(1.5);
@@ -375,7 +373,7 @@ hr {
 
 
 /* IPAD */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 451px) and (max-width: 960px) {
 	.container {
 		width: 100%;
 	}
@@ -391,15 +389,20 @@ hr {
 		right: 15%;
 	}
 	.p-about {
-		height: 22vh;
+		height: 35vh;
 	}
 	.p-services {
-		height: 12vh;
+		height: 18vh;
 	}
-	.resi {
-		padding-top: 30px;
+	.industrial {
+		height: 50vh;
 	}
-	
+	.industrial img {
+		height: 50vh;
+	}
+	.product-image {
+		height: 30vh;
+	}
 	#contact-header {
 		height: 93vh;
 	}
@@ -407,6 +410,7 @@ hr {
 		text-align: center;
 	}
 	.contact-map {
+		height: 85vh;
 		text-align: center;
 	}
 	#lost {
@@ -417,11 +421,151 @@ hr {
 		height: 93vh;
 	}
 	.card-img-top {
-		height: 50vh;
+		height: 40vh;
 	}
+
 }
 
 /* PIXEL */
-@media only screen and (max-width: 400px) {
-
+@media only screen and (max-width: 450px) {
+	.container {
+		width: 100%;
+	}
+	.navbar {
+		height: 8vh;
+	}
+	.nav-link {
+		position: relative;
+		left: 170%;
+		text-align: center;
+		padding: 5px;
+		background-color: #333;
+		background-color: rgba(0,0,0,.5);
+	}
+	.nav-icon-pixel {
+		height: 2vh;
+	}
+	#icon-pixel {
+		position: absolute;
+		top: 20%;
+		left: 85%;
+		height: 5vh;
+		width: 5vh;
+	}
+	.nav-item {
+		height: 5vh;
+		width: 20vh;
+	}
+	.nav-link {
+		font-size: 2vh;
+		color: #333;
+	}
+	#home .carousel,
+	#home .carousel img {
+	height: 50vh;
+	}
+	.carousel-vp h1, p, a {
+		font-size: 5vh;
+	}
+	.carousel-pe {
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		text-align: center;
+	}
+	.carousel-pe h1, p, a {
+		font-size: 4vh;
+	}
+	.carousel-tc {
+		position: absolute;
+		bottom: 2%;
+		right: 15%;
+	}
+	.carousel-tc h1, p, a {
+		font-size: 4vh;
+	}
+	hr {
+		height: .5px;
+	}
+	.p-about {
+		height: 20vh;
+	}
+	h1 {
+		font-size: 2vh;
+	}
+	h2,
+	h3,
+	h4,
+	p {
+		font-size: 1.5vh;
+	}
+	h1,
+	h2,
+	h3 {
+		font-weight: bold;
+	}
+	.services-circles {
+		height: 10vh;
+	}
+	.services-circles > img {
+		height: 15vh;
+	}
+	.p-services {
+		height: 25vh;
+	}
+	.industrial {
+		height: 40vh;
+	}
+	.industrial img {
+		height: 40vh;
+	}
+	.product-image {
+		height: 20vh;
+	}
+	.qcontact .fas,.far,.fab {
+		height: 5vh;
+		width: 5vh;
+		text-align: center;
+	}
+	/* contact html */
+	#contact-header {
+		height: 50vh;
+	}
+	#landing-contact {
+		font-size: 4vh;
+	}
+	.contact-top {
+		text-align: center;
+	}
+	.contact-top > h1 {
+		font-size: 3vh;
+	}
+	.contact-map {
+		height: 55vh;
+		text-align: center;
+	}
+	.contact-map .gmap{
+		height: 40vh;
+	}
+	#lost {
+		height: 10vh;
+		text-align: center;
+	}
+	/* credentials html */
+	#credentials-header {
+		height: 50vh;
+	}
+	#landing-credentials {
+		padding: 0 4px;
+		font-size: 4vh;
+	}
+	.credentials-circles {
+		height: 10vh;
+	}
+	.credentials-circles img {
+		height: 12vh;
+	}
+	.card-img-top {
+		height: 50vh;
+	}
 }
