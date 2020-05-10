@@ -20,7 +20,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
 	<!-- bootstrap css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> -->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/capstone1.css">
@@ -30,17 +33,42 @@
 
 	<div class="container-fluid">
 
+		<!-- nav  -->
+		<nav class="navbar navbar-expand-md fixed-top animated fadeInDown navbar-dark">
+			<a class="navbar-brand" href="#home">
+				<img id="company-logo" class="d-md-block d-none" src="assets/images/logo.png">
+			</a>
+			<button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon d-none"></span>
+				<span class="d-block d-md-none nav-icon-pixel">
+					<img id="icon-pixel" class="img-fluid" src="assets/images/icon.png">
+				</span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbar-nav">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link" href="#home">Home</a>
+					<a class="nav-item nav-link" href="#about">About</a>
+					<a class="nav-item nav-link" href="#services">Services</a>
+					<a class="nav-item nav-link" href="#products">Product</a>
+					<a class="nav-item nav-link" href="#contact">Contact</a>
+					
+				</div>
+			</div>
+		</nav>
+		<!-- end nav -->
+
 		<!-- start nav -->
-		<div class="container-fluid">
+		<!-- <div class="container-fluid">
 			<nav class="navbar navbar-expand-md fixed-top animated fadeInDown">
 				<a href="#home" class="navbar-brand">	
 					<img id="company-logo" class="d-md-block d-none" src="assets/images/logo.png">
 				</a>
 
-				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-nav">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon d-none"></span>
 					<span class="d-block d-md-none nav-icon-pixel">
-						<img id="icon-pixel" src="assets/images/icon.png">
+						<img id="icon-pixel" class="img-fluid" src="assets/images/icon.png">
 					</span>
 				</button>
 
@@ -64,7 +92,7 @@
 					</ul>
 				</div>
 			</nav>
-		</div>
+		</div> -->
 		<!-- end container nav -->
 
 		<!-- start home -->
@@ -81,7 +109,7 @@
 							<div class="carousel-item active" data-interval="3000">
 								<img src="assets/images/img-slide1.jpeg" class="d-block w-100">
 								<div class="carousel-caption d-md-block carousel-vp">
-									<h1 class="animated bounceInLeft my-0"> VANTAGEPOINT </h1>
+									<h1 class="animated bounceInLeft my-md-0 my-5 pb-1"> VANTAGEPOINT </h1>
 									<p class="animated fadeInLeft"> Change your Lighting Perspective </p>
 									<a class="btn animated fadeIn my-2" href="contact.html"> START A PROJECT </a>
 								</div>
@@ -127,31 +155,44 @@
 		<!-- end image connect -->
 
 		<!-- start about -->
-		<section id="about">
+		<section id="about" class="p-md-5 p-3">
 			<h1 class="text-center pt-4"> ABOUT US </h1>
 			<hr>
-			<div class="row">
-				<div class="col-md-6 col-lg-6 text-center">
+			<div class="row align-items-center text-center py-md-5 py-3">
+				<div class="col-lg-6 text-center">
 					<div id="mission" class="p-lg-4">
-						<h2 class="about-tags p-md-3"> MISSION </h2>
-						<p class="text-justify p-lg-5 p-md-4 p-3 p-about"> "Our mission is to provide quality services to our customers in global logistics safely and efficiently by utilizing quality personnel and reliable resources. Offer cost effective, environmentally friendly and problem solving consultations and solutions that assist our clients in achieving their objectives and continually meet and exceed their expectations and provide unquestionable value." </p>
+						<h2 class="about-tags p-md-3 text-danger"> MISSION </h2>
+						<p class="text-justify p-lg-5 p-4 p-about"> "Our mission is to provide quality services to our customers in global logistics safely and efficiently by utilizing quality personnel and reliable resources. Offer cost effective, environmentally friendly and problem solving consultations and solutions that assist our clients in achieving their objectives and continually meet and exceed their expectations and provide unquestionable value." </p>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 text-center">
-					<div id="vision" class="p-lg-4">
-						<h2 class="about-tags p-md-3"> VISION </h2>
-						<p class="text-justify p-lg-5 p-md-4 p-3 p-about"> "We strive to be the most preferred and reliable trading and consultancy company, providing the most creative, innovative and timely services on a consistent basis in terms of brokerage and consignment, in an effort to drive meaningful value to our agents." </p>
-					</div>
+				<div class="col-lg-6 p-md-5 p-3">
+					<img src="assets/images/mission.jpg" class="img-fluid">
 				</div>
 			</div>
+			<!-- end row -->
+			<div class="row align-items-center text-center pt-0">
+				<div class="col-lg-6 d-none d-lg-block p-5">
+					<img src="assets/images/vision.jpg" class="img-fluid">
+				</div>
+				<div class="col-lg-6 text-center">
+					<div id="vision" class="p-lg-4">
+						<h2 class="about-tags p-md-3 text-danger"> VISION </h2>
+						<p class="text-justify p-lg-5 p-4 p-about"> "We strive to be the most preferred and reliable trading and consultancy company, providing the most creative, innovative and timely services on a consistent basis in terms of brokerage and consignment, in an effort to drive meaningful value to our agents." </p>
+					</div>
+				</div>
+				<div class="col-lg-6 d-block d-lg-none p-md-5 p-3">
+					<img src="assets/images/vision.jpg" class="img-fluid">
+				</div>
+			</div>
+			<!-- end row -->
 		</section>
 		<!-- end about -->
 
 		<!-- start services -->
-		<section id="services">
+		<section id="services" class="p-md-5 p-3">
 			<h1 class="text-center pt-4"> CAPABILITIES AND SERVICES </h1>
 			<hr>
-			<div class="row text-center pt-md-3">
+			<div class="row pt-4">
 				<div class="col-4 col-lg-2 offset-lg-3 services-circles">
 					<img src="assets/images/icon4.png" class="circle brokerage">
 				</div>
@@ -163,7 +204,7 @@
 				</div>
 			</div>
 
-			<div class="row pt-5">
+			<!-- <div class="row pt-5">
 				<div class="col-6 col-lg-4 text-center">
 					<div class="capabilitie-services-services consignment px-lg-5">
 						<h2 class="p-3"> Consignment </h2>
@@ -202,64 +243,285 @@
 						We supply Industrial Materials and Equipment depending on your requirements. (Construction Materials, Electrical Pole, LED Lights, etc.) </p>
 					</div>
 				</div>
+			</div> -->
+
+
+			<!-- services -->
+			<div class="services p-md-5 mt-5">
+
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<h2 class="p-3 text-danger">Services Offered</h2>
+
+						<div class="accordion pb-5" id="accordionExample">
+							<div class="card bg-light rounded">
+								<div class="card-header bg-dark rounded" id="headingOne">
+									<h2 class="mb-0">
+										<button id="consignment" class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Consignment
+										</button>
+									</h2>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body">
+										We can receive shipments on your behalf! 
+										We'll be responsible and take care of it.
+									</div>
+								</div>
+							</div>
+							<div class="card bg-light rounded">
+								<div class="card-header bg-dark rounded" id="headingTwo">
+									<h2 class="mb-0">
+										<button id="custom" class="btn btn-link collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											Custom Broker
+										</button>
+									</h2>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										We can be your Middleman! 
+										We facilitate the shipment and delivery of goods across geographical borders for individuals / organizations.
+									</div>
+								</div>
+							</div>
+							<div class="card bg-light rounded">
+								<div class="card-header bg-dark rounded" id="headingThree">
+									<h2 class="mb-0">
+										<button id="trucking" class="btn btn-link collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											Trucking
+										</button>
+									</h2>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										We move!
+										We transport large quantities of raw materials, construction materials, industrial materials and equipment, etc., typically by land.
+									</div>
+								</div>
+							</div>
+							<div class="card bg-light rounded">
+								<div class="card-header bg-dark rounded" id="headingFour">
+									<h2 class="mb-0">
+										<button id="consultation" class="btn btn-link collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											Consultation
+										</button>
+									</h2>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+									<div class="card-body">
+										We can talk to you!
+										We can support you and work together or give professional and expert advice depending on your field of interests. (Legal Consultations, Governance, Risk and Compliance, etc.
+									</div>
+								</div>
+							</div>
+							<div class="card bg-light rounded">
+								<div class="card-header bg-dark rounded" id="headingFive">
+									<h2 class="mb-0">
+										<button id="trading" class="btn btn-link collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+											Trading
+										</button>
+									</h2>
+								</div>
+								<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+									<div class="card-body">
+										We Trade!
+										We supply Industrial Materials and Equipment depending on your requirements. (Construction Materials, Electrical Pole, LED Lights, etc.)
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end accordion -->
+					</div>
+					<!-- end col -->
+
+					<div class="col-lg-6 text-center image">
+						<img id="image" src="assets/images/consignment.jpg" class="img-fluid">
+					</div>
+					<!-- end col -->
+				</div>
+				<!-- end row -->
+				
 			</div>
+			<!-- end services -->
+
 
 		</section>
 		<!-- end services -->
 
 		<!-- start products -->
-		<section id="products">
+		<section id="products" class="p-md-5 p-3">
 			<h1 class="text-center pt-4"> PRODUCTS </h1>
 			<hr>
-			<h2 class="text-center p-3 p-md-5"> INDUSTRIAL | RESIDENTIAL </h2>
+			<h2 class="text-center text-danger p-3 p-md-5"> INDUSTRIAL | RESIDENTIAL </h2>
 
 			<div class="container-fluid">
 				<div class="row text-center industrial">
-					<div class="col-6">
+					<div class="col-6 p-1">
 						<img class="img-fluid industrial-img" src="assets/images/industrial1.jpg">
 					</div>
-					<div class="col-6">
+					<div class="col-6 p-1">
 						<img class="img-fluid industrial-img resi" src="assets/images/industrial2.jpeg">
 					</div>
 				</div>
 			</div>
+		</section>
+		<!-- end products -->
 
-			<hr class="mt-5">
-			<h1 class="text-center p-lg-4"> LED LIGHTS </h1>
-			<div class="row text-center px-4 px-lg-5">
+		<div id="productImage" class="my-5 text-center align-items-center">
+		</div>
+
+		<!-- led -->
+		<section id="led" class="p-md-5 p-3">
+			<h1 class="text-center pt-lg-5"> LED LIGHTS </h1>
+			<hr>
+			<div class="row text-center px-4 p-lg-5">
 				<div class="col-lg-6 text-center">
-					<h3 class="p-3"> Eco-Friendly </h3>
-					<p class="p-3 p-md-5 text-justify p-products"> LED product is healthy, free of stroboflash, ultraviolent rays, infrared radiation and mercury element. It will not produce harmful substances during the use, so it is recognized as a new green lighting in the twenty first century. </p>
+					<h2 class="p-3 text-danger"> Eco-Friendly </h2>
+					<p class="p-4 p-md-5 text-justify p-products"> LED product is healthy, free of stroboflash, ultraviolent rays, infrared radiation and mercury element. It will not produce harmful substances during the use, so it is recognized as a new green lighting in the twenty first century. </p>
 				</div>
-				<div class="col-lg-6">
-					<h3 class="p-3"> Energy-Efficient </h3>
-					<p class="p-3 p-md-5 text-justify p-products"> LED product has the advantages of high brightness, low power consumption, low hear, etc. 50-80% of energy can be saved compared to the traditional light sources under the same illumination intensity. </p>
+				<div class="col-lg-6 text-center">
+					<h2 class="p-3 text-danger"> Energy-Efficient </h2>
+					<p class="p-4 p-md-5 text-justify p-products"> LED product has the advantages of high brightness, low power consumption, low hear, etc. 50-80% of energy can be saved compared to the traditional light sources under the same illumination intensity. </p>
 				</div>
 			</div>
+
 
 			<div class="container-fluid pb-5">
 				<div class="row">
-					<div class="col-6 col-lg-3 text-center">
+					<div class="col-12 col-md-6 col-lg-3 text-center">
 						<h2 class="pt-5"> STREETLIGHTS </h2>
-						<img class="img-fluid product-image" src="assets/images/streetlight.jpg">
+						<img class="img-fluid product-image" src="assets/images/streetlight.jpg" data-toggle="modal" data-target="#streetlights">
+
+						<!-- Modal -->
+						<div class="modal fade" id="streetlights" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-centered" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLongTitle">Streetlights</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        There are no product lists yet
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- end modal -->
+
 					</div>
-					<div class="col-6 col-lg-3 text-center">
+					<div class="col-12 col-md-6 col-lg-3 text-center">
 						<h2 class="pt-5"> DOWNLIGHTS </h2>
-						<img class="img-fluid product-image" src="assets/images/downlight.png">
+						<img class="img-fluid product-image" src="assets/images/downlight.png" data-toggle="modal" data-target="#downlights">
+
+						<!-- Modal -->
+						<div class="modal fade" id="downlights" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-centered" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLongTitle">Downlights</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        There are no product lists yet
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- end modal -->
+
 					</div>
-					<div class="col-6 col-lg-3 text-center">
+					<div class="col-12 col-md-6 col-lg-3 text-center">
 						<h2 class="pt-5"> FLOODLIGHTS </h2>
-						<img class="img-fluid product-image" src="assets/images/floodlight.jpg">
+						<img class="img-fluid product-image" src="assets/images/floodlight.jpg" data-toggle="modal" data-target="#floodlights">
+
+						<!-- Modal -->
+						<div class="modal fade" id="floodlights" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-centered" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLongTitle">Floodlights</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        There are no product lists yet
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- end modal -->
+
 					</div>
-					<div class="col-6 col-lg-3 text-center">
+					<div class="col-12 col-md-6 col-lg-3 text-center">
 						<h2 class="pt-5"> TUBELIGHTS </h2>
-						<img class="img-fluid product-image" src="assets/images/tubelight.jpg">
+						<img class="img-fluid product-image" src="assets/images/tubelight.jpg" data-toggle="modal" data-target="#tubelights">
+
+						<!-- Modal -->
+						<div class="modal fade" id="tubelights" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-centered" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLongTitle">Tubelights</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        There are no product lists yet
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- end modal -->
+
 					</div>
 				</div>
 			</div>
-
 		</section>
-		<!-- end products -->
+		<!-- end led -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        ...
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- end modal -->
 
 		<!-- start contact -->
 		<div class="container-fluid">
@@ -315,9 +577,21 @@
 	<!-- end container -->
 
 	<!-- bootstrap dependencies -->
-	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<!-- <script src="assets/js/jquery-3.4.1.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+-->
+
+	<!-- external js -->
+	<script src="assets/js/script.js"></script>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

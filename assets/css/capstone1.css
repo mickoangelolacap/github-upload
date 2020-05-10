@@ -14,29 +14,31 @@ hr {
 	background-color: #C0392B;
 	height: 3px;
 }
+h1 {
+	font-weight: bold;
+}
+h2 {
+	font-weight: bold;
+}
 
 /* start navbar */
 #company-logo {
 	width: 150px;
 }
 
-.nav-item .nav-link {
-	margin: 0px 10px;
-	color: #f2f2f2;
-}
-
-.nav-item .nav-link:hover {
+/*.nav-item .nav-link:hover {
 	transition: .2s;
 	background-color: #f2f2f2;
 	color: #333;
 	border-radius: 5px;
-}
+}*/
 
 .navbar {
-	height: 80px;
+	/*height: 80px;*/
 	background-color: #333;
 	background-color: rgba(0,0,0,.5);
 }
+
 /* end navbar */
 
 /* start carousel */
@@ -59,6 +61,7 @@ hr {
 }
 .carousel-vp a {
 	padding: 10px 20px;
+	border-radius: 10px;
 	border: 2px solid #C0392B;
 	font-size: 20px;
 	color: #333;
@@ -85,6 +88,7 @@ hr {
 }
 .carousel-pe a {
 	padding: 10px 20px;
+	border-radius: 10px;
 	border: 2px solid #C0392B;
 	font-size: 20px;
 	color: #f2f2f2;
@@ -107,6 +111,7 @@ hr {
 }
 .carousel-tc a {
 	padding: 10px 20px;
+	border-radius: 10px;
 	border: 2px solid #C0392B;
 	font-size: 20px;
 	color: #f2f2f2;
@@ -142,16 +147,28 @@ hr {
 
 /* start about */
 .p-about {
-	height: 40vh;
-	border: 2px solid #333;
-	border-radius: 10px;
-	box-shadow: 0px 25px 42px rgba(0,0,0,0.5);
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	height: 100%;
+	/*border: 2px solid #333;*/
+	border-radius: 50px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 .p-about:hover {
 	border-color: #C0392B;
 	background-color: #333;
 	background-color: rgba(0,0,0,.5);
-	transition: .2s;
+	transition: .3s;
+}
+#about img {
+	height: 60vh;
+	border-radius: 50px;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+#about img:hover {
+	transform: scale(1.05);
+	transition: .3s;
 }
 /* end about */
 
@@ -164,10 +181,10 @@ hr {
 	height: 20vh;
 }
 .services-circles > img:hover {
-	transform: scale(1.5);
-	transition: .2s;
+	transform: scale(1.1);
+	transition: .3s;
 }
-.p-services {
+/*.p-services {
 	height: 26vh;
 	border: 2px solid #333;
 	border-radius: 10px;
@@ -178,6 +195,16 @@ hr {
 	background-color: #333;
 	background-color: rgba(0,0,0,.5);
 	transition: .2s;
+}*/
+
+.image img {
+	height: 40vh;
+	border-radius: 50px;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+.image img:hover {
+	transform: scale(1.05);
+	transition: .3s;
 }
 /* end services */
 
@@ -185,13 +212,30 @@ hr {
 /* start products */
 .industrial-img {
 	height: 100vh;
-	box-shadow: 20px 35px 30px rgba(0,0,0,0.5);
+	border-radius: 50px;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+.industrial-img:hover {
+	transform: scale(1.05);
+	transition: .3s;
+}
+
+#productImage {
+	height: 100vh;
+	background-image: url(../images/productImage.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .p-products {
-	border: 2px solid #333;
-	border-radius: 10px;
-	box-shadow: 0px 25px 42px rgba(0,0,0,0.5);
+	height: 25vh;
+	/*border: 2px solid #333;*/
+	border-radius: 50px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	font-family: 'Lora', serif;
 }
 .p-products:hover {
 	border-color: #C0392B;
@@ -202,6 +246,7 @@ hr {
 .product-image {
 	width: 100%;
 	height: 50vh;
+	border-radius: 50px;
 	box-shadow: 20px 25px 30px rgba(0,0,0,0.5);
 }
 .product-image:hover {
@@ -353,7 +398,7 @@ hr {
 	border: 2px solid #C0392B;
 	box-shadow: 0px 25px 42px rgba(0,0,0,0.5);
 	border-radius: 10px;
-	width: 80%;
+	width: 100%;
 	height: 60vh;
 }
 .contact-submit {
@@ -366,7 +411,7 @@ hr {
 	transition: .2s;
 }
 #lost {
-	text-align: center;
+	/*text-align: center;*/
 	height: 50vh;
 }
 /* END CONTACT HTML */
@@ -379,6 +424,7 @@ hr {
 /* IPAD */
 @media only screen and (min-width: 451px) and (max-width: 960px) {
 	.container {
+		height: 100%;
 		width: 100%;
 	}
 	.carousel-pe {
@@ -393,9 +439,12 @@ hr {
 		right: 15%;
 	}
 	.p-about {
-		height: 35vh;
+		/*height: 35vh;*/
 	}
 	.p-services {
+		/*height: 18vh;*/
+	}
+	.p-products {
 		height: 18vh;
 	}
 	.industrial {
@@ -414,7 +463,7 @@ hr {
 		text-align: center;
 	}
 	.contact-map {
-		height: 85vh;
+		height: 100%;
 		text-align: center;
 	}
 	#lost {
@@ -438,31 +487,32 @@ hr {
 	.container {
 		width: 100%;
 	}
-	.navbar {
+	/*.navbar {
 		height: 8vh;
-	}
+	}*/
 	.nav-link {
-		position: relative;
-		left: 170%;
-		text-align: center;
+		/*position: relative;*/
+		/*left: 170%;*/
+		/*text-align: center;*/
 		padding: 5px;
-		background-color: #333;
-		background-color: rgba(0,0,0,.5);
+		margin-left: 15px;
+		/*background-color: #333;*/
+		/*background-color: rgba(0,0,0,.5);*/
 	}
-	.nav-icon-pixel {
+	/*.nav-icon-pixel {
 		height: 2vh;
-	}
+	}*/
 	#icon-pixel {
-		position: absolute;
+		/*position: absolute;
 		top: 20%;
-		left: 85%;
+		left: 85%;*/
 		height: 5vh;
 		width: 5vh;
 	}
-	.nav-item {
+	/*.nav-item {
 		height: 5vh;
 		width: 20vh;
-	}
+	}*/
 	.nav-link {
 		font-size: 2vh;
 		color: #333;
@@ -471,8 +521,12 @@ hr {
 	#home .carousel img {
 		height: 50vh;
 	}
-	.carousel-vp h1, p, a {
-		font-size: 5vh;
+	.carousel-vp h1 {
+		font-size: 35px;
+		/*margin-bottom: 80px;*/
+	}
+	.carousel-vp p, a {
+		font-size: 3vh;
 	}
 	.carousel-pe {
 		position: absolute;
@@ -491,43 +545,60 @@ hr {
 	.carousel-tc h1, p, a {
 		font-size: 4vh;
 	}
-	hr {
+	/*hr {
 		height: .5px;
-	}
+	}*/
 	.p-about {
-		height: 20vh;
+		height: 100%;
 	}
 	h1 {
-		font-size: 2vh;
+		font-size: 4vh;
 	}
 	h2,
 	h3,
-	h4,
-	p {
-		font-size: 1.5vh;
+	h4 {
+		font-size: 3vh;
+	}
+	.p-about {
+		font-size: 15px;
+		/*padding: 50px;*/
 	}
 	h1,
 	h2,
 	h3 {
 		font-weight: bold;
 	}
+	#about img {
+		height: 30vh;
+	}
 	.services-circles {
 		height: 10vh;
 	}
 	.services-circles > img {
-		height: 15vh;
+		height: 12vh;
+		padding: 0px 0px;
 	}
-	.p-services {
-		height: 25vh;
+	.services img {
+		height: 30vh;
 	}
+	#products h2 {
+		font-size: 20px;
+	}
+	/*.p-services {
+		height: 100%;
+	}*/
 	.industrial {
-		height: 40vh;
+		height: 30vh;
 	}
 	.industrial img {
-		height: 40vh;
+		height: 30vh;
+	}
+	.p-products {
+		font-size: 15px;
+		height: 28vh;
 	}
 	.product-image {
-		height: 20vh;
+		height: 30vh;
 	}
 	.qcontact .fas,.far,.fab {
 		height: 5vh;
@@ -541,14 +612,17 @@ hr {
 	#landing-contact {
 		font-size: 4vh;
 	}
-	.contact-top {
+	/*.contact-top {
 		text-align: center;
-	}
+	}*/
 	.contact-top > h1 {
 		font-size: 3vh;
 	}
+	.contact-top > h4 {
+		font-size: 2vh;
+	}
 	.contact-map {
-		height: 55vh;
+		height: 75vh;
 		text-align: center;
 	}
 	.contact-map .gmap{
